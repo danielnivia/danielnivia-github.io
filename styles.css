@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap'); /*adding the styles here is more organized */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
+
 
 
 body {
@@ -18,11 +19,11 @@ h1 {
 h3 {
   /* color: rgb(255,255,255) */
   font-size: 30pt;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
   /* color: rgb(255,255,255) */
   font-size: 20pt; /* Check this size*/
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
