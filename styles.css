@@ -1,28 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap'); /*adding the styles here is more organized */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
 
-
-body {
-  background-color: rgb(59, 119, 223);
-  color: white
+*{
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  /* color: rgb(211, 211, 211); */
-  text-align: center;
-  font-size: 45pt;
+.container{
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+}
+
+.navbar{
+  width: 100%;
+  /*height: 15vh;*/
+  height: 150px;
+  background-color: #ede9dc;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 83px; /*original size of file*/
+  /*padding-top: 34px; changes done in navbar*/
+  padding-left: 34px;
+  /*border-radius: 10px;*/
+  cursor: pointer;
+}
+
+nav{
   font-family: 'Orbitron', sans-serif;
+  padding-left: 20px;
   
 }
 
-h3 {
-  /* color: rgb(255,255,255) */
-  font-size: 30pt;
-  font-family: 'Roboto', sans-serif;
+/*Removing the decoration to the text*/
+nav a{
+  text-decoration: none;
+  color: #333;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  
+  font-size: 15pt;
+  margin: 0px 25px; /*no margin top, 20 px sides*/
 }
 
-p {
-  /* color: rgb(255,255,255) */
+.Title{
+  text-align: left;
+  font-size: 30pt;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.BodyText{
+  margin-left: 75px;
+  text-align: left;
+  color: #fc0;
   font-size: 20pt; /* Check this size*/
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+
+
+
+.VideoFile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
