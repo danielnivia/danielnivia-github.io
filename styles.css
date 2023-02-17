@@ -14,14 +14,14 @@
 .navbar{
   width: 100%;
   /*height: 15vh;*/
-  height: 150px;
+  height: 100px;
   background-color: #ede9dc;
   display: flex;
   align-items: center;
 }
 
 .logo{
-  width: 83px; /*original size of file*/
+  width: 60px; /*original size of file*/
   /*padding-top: 34px; changes done in navbar*/
   padding-left: 34px;
   /*border-radius: 10px;*/
@@ -56,21 +56,21 @@ nav ul li{
   margin-top: 100px; /*adjust margin prior to flexbox*/
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  /*justify-content: space-between;*/
+  row-gap: 15px;
+  /* justify-content: space-between; */
   
 }
 
-.Title{
+ .textElements h1{
   text-align: left;
   /*margin: 60px 75px 15px; NOT NEEDED*/
-  font-size: 30pt;
+  font-size: 50pt;
   font-family: 'Orbitron', sans-serif;
   color: #0a8;
 }
 
 
-.BodyText{
+.textElements p{
   /*margin-left: 75px;
   margin-bottom: 15px; NOT NEEDED*/
   text-align: left;
@@ -79,6 +79,42 @@ nav ul li{
   font-family: "Raleway", sans-serif;
 }
 
-.VideoFile{
+.imageSlide{
   margin-top: 100px;
+}
+
+/*.VideoFile{
+  margin-top: 100px;
+}*/
+
+.btnWatch{
+  background-color: #137CDE;
+  border: none;
+  color: #EDE9DC;
+  padding: 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15pt;
+  font-family: "Raleway", sans-serif;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.VideoFile{
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-40%);
+  cursor: pointer;
+  display: none;
+}
+
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
 }

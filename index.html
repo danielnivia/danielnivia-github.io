@@ -26,24 +26,31 @@
             <!--Body Website Section-->
 
             <div class="bodyWebsite">
-                <div class="textElements">
-                    <div class="Title">
-                        <h1>Highlining</h1>
+                <div class="textElements" id="elementsText"> <!--hide when click video-->
+                    
+                    <h1>Highlining</h1>  
+                    <p>Highlining is a short film premiered for<br>Communications Lab. In this film the viewer<br>is led through the NYU Abu Dhabi campus<br>accompanied with an excerpt composed<br>by Blue Sandwich (Daniel Nivia) named<br>Look Inside Yourself. </p>
+                    <button class="btnWatch" onclick="playVideo('media/CommLab-VideoAssignment1.mp4')">Watch Video</button>
                     </div>
+                    <div class="imageSlide">
+                        <img name="carrousel"
+                        id="currentImage" width="600" height="400"> 
                         
-                    <div class="BodyText">
-                            <p>Highlining is a short film premiered for<br>Communications Lab. In this film the viewer<br>is led through the NYU Abu Dhabi campus<br>accompanied with an excerpt composed<br>by Blue Sandwich (Daniel Nivia) named<br>Look Inside Yourself. </p>
                     </div>
                 </div>
-                
-                <div class="VideoFile">
+
+                <div class="VideoFile" id="videoPlayer">
             
-                        <video width="600" height="400" controls>
+                        <video width="100%" controls id="myVideo">
                             <source src="media/CommLab-VideoAssignment1.mp4" type="video/mp4"></video>
-                    
+
+                        
+
+                        <img src="media/closeLogo.png" class="close-btn" onclick="stopVideo()">
                 </div>
             </div>
         </div>
-
+        <script src="script.js"></script>
+        
     </body>
 </html>
