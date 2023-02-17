@@ -5,6 +5,7 @@ var time = 3000; // miliseconds
 let videoPLayer = document.getElementById("videoPlayer");
 let myVideo = document.getElementById("myVideo");
 let textElements = document.getElementById("elementsText");
+let imagesRotate = document.getElementById("currentImage");
 
 //filling the array
 images[0] = 'media/img1.png' 
@@ -30,13 +31,16 @@ function displayImg() {
 function stopVideo(){
     videoPlayer.style.display = "none";
     myVideo.pause();
-    textElements.style.display = "flex"
+    textElements.style.display = "flex";
+    imagesRotate.style.display = "flex";
+
 }
 
 // play function video receives a string with the file path
 function playVideo(file){
     myVideo.src = file;
     videoPlayer.style.display = "block";
-    textElements.style.display = "none"
+    textElements.style.display = "none";
+    imagesRotate.style.display = "none";
 
 }
